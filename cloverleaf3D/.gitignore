@@ -1,0 +1,5 @@
+*
+!.gitignore
+!clean
+!pantheon.cbd/
+!pantheon.ipynb
