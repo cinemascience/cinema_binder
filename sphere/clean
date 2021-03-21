@@ -1,0 +1,19 @@
+#!/bin/bash
+
+dbname=sphere
+
+# make a temp dir
+mkdir ../tmp
+
+# move the real stuff there
+mv $dbname.* ../tmp
+
+# clean
+rm -rf *
+rm -rf .pynb*
+
+# put the files back
+mv ../tmp/$dbname* .
+
+# clean up
+rmdir ../tmp
