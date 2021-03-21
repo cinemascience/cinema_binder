@@ -1,0 +1,21 @@
+#!/bin/bash
+
+dbname=pantheon
+
+# make a temp dir
+mkdir ../tmp
+
+# move the real stuff there
+mv $dbname.* ../tmp
+
+# clean
+rm -rf *
+rm -rf .pynb*
+rm -rf .ipynb*
+
+# put the files back
+mv ../tmp/$dbname* .
+git checkout clean
+
+# clean up
+rmdir ../tmp
