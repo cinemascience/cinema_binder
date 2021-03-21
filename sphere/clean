@@ -11,9 +11,11 @@ mv $dbname.* ../tmp
 # clean
 rm -rf *
 rm -rf .pynb*
+rm -rf .ipynb*
 
 # put the files back
 mv ../tmp/$dbname* .
+git checkout clean
 
 # clean up
 rmdir ../tmp
