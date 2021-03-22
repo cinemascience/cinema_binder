@@ -16,6 +16,7 @@ rm -rf .ipynb*
 # put the files back
 mv ../tmp/$dbname* .
 git checkout clean
+git checkout readme.md
 
 # clean up
 rmdir ../tmp
